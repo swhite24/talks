@@ -15,7 +15,7 @@ Steven White
 
 - More generic term for "operator"
 - Controllers enable you to watch resources / other structured data in K8s and perform custom actions
-- Often paried with a custom resource, providing a **declarative** API
+- Often paired with a custom resource, providing a **declarative** API
 - Full integration with K8s tooling, such as `kubectl`
 
 ---
