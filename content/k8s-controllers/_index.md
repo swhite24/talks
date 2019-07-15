@@ -57,6 +57,28 @@ Steven White
 
 {{% section %}}
 
+### Other customizations
+
+---
+
+### Mutating admission webhook
+
+- HTTP callback invoked by kubernetes API when new objects created
+- Can be helpful to set defaults / modify objects
+
+---
+
+### Validating admission webhook
+
+- HTTP callback invoked by kubernetes API **after** mutating admission webhooks
+- Can be helpful to reject objects / enforce policies
+
+{{% /section %}}
+
+---
+
+{{% section %}}
+
 ### Building custom controllers / CRDs
 
 - Several tools are available for building custom kubernetes applications
