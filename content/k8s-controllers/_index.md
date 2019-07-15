@@ -28,7 +28,8 @@ Steven White
 
 ---
 
-### Diagram showing data flowing from controller <-> k8s api
+<!-- ### Diagram showing data flowing from controller <-> k8s api -->
+<img src="/img/controller-data-flow.png" style="max-height: 500px" />
 
 {{% /section %}}
 
