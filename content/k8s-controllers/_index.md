@@ -88,6 +88,33 @@ Steven White
   - Others probably
 - Most have come to settle on the [controller-runtime](https://github.com/kubernetes-sigs/controller-runtime) as a common set of libraries
 
+---
+
+### Kubebuilder
+
+- _"SDK for building Kubernetes APIs using CRDs"_
+- [Documentation](https://book-v1.book.kubebuilder.io/)
+- Provides cli to bootstrap new controllers / APIs
+- V2 currently in pre-release
+
+---
+
+### Kubebuilder
+
+- `kubebuilder init --domain k8s.io --license apache2 --owner "The Kubernetes Authors"`
+  - initialize new project
+- `kubebuilder create api --group ships --version v1beta1 --kind Sloop`
+  - add new resource / controller pairing
+
+---
+
+### Kubebuilder
+
+- `make install`
+  - install CRD definitions to cluster
+- `make run`
+  - run controller using local kube config
+
 {{% /section %}}
 
 ---
@@ -154,22 +181,6 @@ spec:
   image: 'nginx:latest'
   port: 80
 </code></pre>
-
-{{% /section %}}
-
----
-
-{{% section %}}
-
-### Notification Demo
-
-- We'll deploy a controller only, no CRD
-- This controller will watch for new deployment objects to be created and send a SMS in response
-- Hope is to demonstrate that controllers are not limited to in cluster functionality
-
----
-
-### Diagram showing data flowing from k8s api <-> controller <-> twilio API
 
 {{% /section %}}
 
