@@ -28,6 +28,13 @@ Steven White
 
 ---
 
+### What is an operator?
+
+- operator pattern combines custom resources and custom controllers
+- application-specific controller that extends the Kubernetes API to create, configure, and manage instances of complex stateful applications
+
+---
+
 <!-- ### Diagram showing data flowing from controller <-> k8s api -->
 <img src="/img/controller-data-flow.png" style="max-height: 500px" />
 
